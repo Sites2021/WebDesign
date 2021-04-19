@@ -1,0 +1,95 @@
+body,
+html {
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+:root {
+  --clr-primary: #fff969;
+  --clr-primary-dark: #b6b239;
+  --clr-h-txt-pink: #e20c50;
+  --clr-h-txt: #1e1e1e;
+  --clr-secondary: #878787;
+  --clr-white-dark: #f1f1f1;
+  --clr-white: #ffffff;
+  --ff-primary: "Open Sans", sans-serif;
+  --ff-secondary: "Roboto", cursive;
+  --font-weight-heading: 500;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --radius-sm: 0.25rem;
+  scroll-behavior: smooth;
+}
+/*Input*/
+input {
+  padding: 0 10px;
+  border: 2px solid #1e1e1e;
+  background-color: transparent;
+}
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder,
+input:-moz-placeholder {
+  font-size: 16px;
+  color: var(--clr-h-txt);
+}
+/* Btn */
+.btn {
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: none;
+  text-align: center;
+  padding: 28px 72px;
+  color: var(--clr-white);
+  background-color: var(--clr-h-txt-pink);
+  border-radius: 40px;
+}
+.btn:hover {
+  color: var(--clr-white);
+}
+.btn-footer {
+  background-color: var(--clr-h-txt);
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: none;
+  text-align: center;
+  padding: 28px 72px;
+  color: var(--clr-primary);
+}
+/* back to top */
+#myBtn {
+  width: 45px;
+  height: 45px;
+  background-color: var(--clr-h-txt);
+  right: 40px;
+  bottom: 70px;
+  z-index: 9;
+  display: none;
+  font-size: 24px;
+  color: var(--clr-white);
+  position: fixed;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  border: none;
+}
+#myBtn:hover {
+  background-color: var(--clr-secondary);
+}
