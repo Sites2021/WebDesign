@@ -2,13 +2,17 @@
 const date = (document.getElementById("date").innerHTML = new Date().getFullYear());
 
 // Mobile Menu
+	 // function myFunction(x) {
+		// 	$(".menu-button").toggleClass('active');
+		// 	// $('.menu1').toggleClass('active');
+		// 	document.getElementById("menu").style.display = "inline-block";
+  //      };
 let menu = $('.menu');
 $('.menu-button').on('click', function(){
 		menu.toggle();
 		$(this).toggleClass('active');
 		menu.parent().toggleClass('mobile-menu');
 	});
-
 	// Back to Top
 var mybutton = document.getElementById("myBtn");
 
@@ -26,4 +30,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
