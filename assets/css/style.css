@@ -116,9 +116,6 @@ header li {
   display: inline-block;
   margin-right: 46px;
 }
-header li:last-child {
-  margin-right: 0;
-}
 .header {
   position: relative;
   padding-top: 33px;
@@ -127,6 +124,16 @@ header li:last-child {
 .header .menu {
   z-index: 999;
 }
+.header .menu li:nth-child(1),
+.header .menu li:nth-child(2),
+.header .menu li:nth-child(3) {
+  float: left;
+}
+.header .menu li:nth-child(4),
+.header .menu li:nth-child(5),
+.header .menu li:nth-child(6) {
+  float: right;
+}
 .header .menu a,
 .menu.active {
   color: var(--clr-black-1);
@@ -134,7 +141,6 @@ header li:last-child {
   position: relative;
   text-decoration: none;
 }
-
 .header .row {
   display: -ms-flexbox;
   display: flex;
@@ -148,9 +154,8 @@ header li:last-child {
   background-color: transparent;
   border: none;
   padding: 0;
-  margin-top: -20px;
+  /* margin-top: -10px; */
 }
-
 .menu-button.active span {
   background-color: transparent;
   transition-delay: 0.2s;
@@ -206,6 +211,76 @@ header li:last-child {
 .mobile-menu .menu .mega-menu-top:before {
   top: 9px;
 }
+/* first section */
+.container-rectangle .row {
+  display: flex;
+  justify-content: center;
+}
+.rectangle {
+  height: 679px;
+  width: 679px;
+  border: 15px solid var(--clr-primary-2);
+  background-color: transparent;
+  transform: rotate(45deg);
+  position: fixed;
+  top: -30rem;
+  margin: 0;
+}
+/* title */
+.container-title .title {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0rem;
+}
+.container-title .title h2 {
+  letter-spacing: -0.25rem;
+  font-size: 4rem;
+  font-weight: 900;
+}
+.container-title .title span {
+  color: var(--clr-primary-2);
+  font-size: 5rem;
+}
+.container-title .rectangle-line {
+  border: 0.2rem solid var(--clr-grey-2);
+  width: 7rem;
+  position: fixed;
+  top: 6.1rem;
+}
+/* social-icons */
+.social-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0;
+}
+.social-icon a {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  color: var(--clr-white);
+  font-size: 2rem;
+  border: var(--clr-grey-2) solid 0.2rem;
+  border-radius: 100%;
+  text-align: center;
+  margin: 0 0.25rem;
+}
+.social-icon ul {
+  padding: 0;
+}
+.social-icon li {
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+.social-icon li:hover a {
+  opacity: 0.7;
+}
+.social-icon li i {
+  color: var(--clr-grey-2);
+}
+
 /* back to top */
 #myBtn {
   width: 45px;

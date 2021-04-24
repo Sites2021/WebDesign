@@ -18,35 +18,56 @@
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <!-- Responsive CSS -->
 <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+<!-- Rectangles -->
+<link rel="stylesheet" type="text/css" href="assets/css/rectangles.css">
 </head>
-
 <body>
 <!-- FIRST SECTION -->
 <!-- HEADER -->
 <header>
- 	<div class="container-fluid header">
- 		<div class="row">
- 			<div class="col-xl-8 col-sm-7 col-xs-4 text-left menuToggle" onclick="toggleMenu();">
- 				<ul class="menu navigation">
- 					<li><a href="#" onclick="toggleMenu();">home</a></li>
- 					<li><a href="#" onclick="toggleMenu();">about us</a></li>
- 					<li><a href="#" onclick="toggleMenu();">blog</a></li>
- 				</ul>
-					<button type="button" class="menu-button">
-						<span></span>
-					</button>
- 			</div>
- 			<div class="col-xl-4 col-sm-5 col-xs-4 text-right menuToggle" onclick="toggleMenu();">
-		 		<ul class="menu navigation">
-		 			<li><a href="#" onclick="toggleMenu();">services</a></li>
-		 			<li><a href="#" onclick="toggleMenu();">pages</a></li>
-		 			<li><a href="#" onclick="toggleMenu();">contact us</a></li>
-		 		</ul>
- 			</div>
- 		</div>
- 	</div>
-</header>
-<!-- END OF HEADER -->
+	<div class="header">
+		<div class="row">
+			<div class="menuToggle" onclick="toggleMenu();">
+				<ul class="menu navigation">
+					<li><a href="#" onclick="toggleMenu();">home</a></li>
+					<li><a href="#" onclick="toggleMenu();">about us</a></li>
+					<li><a href="#" onclick="toggleMenu();">blog</a></li>
+					<li><a href="#" onclick="toggleMenu();">contact us</a></li>
+					<li><a href="#" onclick="toggleMenu();">pages</a></li>
+					<li><a href="#" onclick="toggleMenu();">services</a></li>
+				</ul>
+				<button type="button" class="menu-button">
+					<span></span>
+				</button>
+			</div>
+		</div>
+		</div>
+	</div>
+</header> <!--header-->
+<!-- rectangle -->
+<div class="container container-fluid container-rectangle">
+	<div class="row justify-content-center">
+	 <div class="rectangle"></div>
+	</div>
+</div> <!--rectangle-->
+<!-- title -->
+<div class="container container-fluid container-title">
+	<div class="row justify-content-center">
+		<div class="title">
+			<h2>digital<span>.</span></h2>
+		</div>
+		<div class="rectangle-line"></div>
+		<div class="social-icons">
+			<ul class="social-icon">
+				 <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+				 <li class="google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				 <li class="youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
+			 </ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--rectangle-->
 <!-- END OF FIRST SECTION -->
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
 
@@ -73,8 +94,10 @@
 		function toggleMenu() {
 				const menuToggle = document.querySelector('.menuToggle');
 				const navigation = document.querySelector('.navigation');
+				const menuButton = document.querySelector('.menu-button');
 				menuToggle.classList.toggle('active');
 				navigation.classList.toggle('active');
+				menuButton.classList.toggle('active');
 			}
 	</script>
 </body>

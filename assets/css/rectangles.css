@@ -1,0 +1,63 @@
+@media only screen and (max-width: 1500px) {
+  .rectangle {
+    top: -35rem;
+    transition: 0.2s;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .rectangle {
+    top: -40rem;
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 992px) {
+  .rectangle {
+    top: -30rem;
+  }
+}
+@media (max-width: 700px) {
+  .rectangle {
+    height: 600px;
+    width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .rectangle {
+    height: 550px;
+    width: 550px;
+    top: -28rem;
+  }
+}
+@media (max-width: 550px) {
+  .rectangle {
+    height: 450px;
+    width: 450px;
+    top: -20rem;
+  }
+}
+@media (max-width: 450px) {
+  .rectangle {
+    height: 400px;
+    width: 400px;
+    top: -15rem;
+  }
+}
+@media (max-width: 400px) {
+  .rectangle {
+    height: 350px;
+    width: 350px;
+  }
+}
+@media (max-width: 350px) {
+  .rectangle {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media (max-width: 300px) {
+  .rectangle {
+    height: 250px;
+    width: 250 px;
+  }
+}
