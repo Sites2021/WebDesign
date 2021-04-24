@@ -221,7 +221,7 @@ header li {
 }
 /* banner */
 .banner {
-  background: url(../images/Layer\ 4.png);
+  background: url(../images/banner.png);
   width: 100vw;
   height: 130vh;
   background-size: cover;
@@ -305,7 +305,43 @@ header li {
 .social-icon li i {
   color: var(--clr-white);
 }
-
+/* creative section */
+section .creative {
+  height: 90vh;
+  width: 100vw;
+  background-color: var(--clr-grey-2);
+  overflow: hidden;
+  position: absolute;
+}
+section .creative .images {
+  width: 120rem;
+  position: absolute;
+  top: 6.5rem;
+  left: 35rem;
+  transform: rotate(-45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+}
+section .creative .images .imgDiv {
+  width: 38rem;
+  /* height: 2rem; */
+  /* overflow: hidden; */
+  transform: rotate(45deg);
+  margin: -3rem;
+}
+section .creative img {
+  /* transform: rotate(45deg); */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrapper {
+  width: 100vw;
+  position: relative;
+  margin: 0 auto;
+}
 /* back to top */
 #myBtn {
   width: 45px;
