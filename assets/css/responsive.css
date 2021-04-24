@@ -12,6 +12,41 @@
   .container-large {
     width: 1100px;
   }
+  .banner .mainTitle h2 {
+    margin: 5rem 0 5rem 0;
+    font-size: 5rem;
+  }
+  .banner .mainTitle p {
+    font-size: 1.3rem;
+    margin-bottom: 5rem;
+  }
+  /* title */
+  .container-title .title {
+    width: 40rem;
+    top: -1.3rem;
+  }
+  .container-title .title h2 {
+    letter-spacing: -0.2rem;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .container-title .rectangle-line {
+    border: 0.15rem solid var(--clr-white);
+    width: 7rem;
+    height: auto;
+    background-color: white;
+    top: 4.2rem;
+  }
+  /* social-icons */
+  .social-icon {
+    margin-top: 0;
+  }
+  .social-icon a {
+    width: 2.75rem;
+    height: 2.75rem;
+    font-size: 1.6rem;
+    margin: 0 2rem;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .container-large {
@@ -20,6 +55,20 @@
 }
 
 @media (max-width: 992px) {
+  .banner {
+    background-position: center;
+  }
+  .banner .mainTitle h2 {
+    margin-top: 15rem;
+  }
+  /* title */
+  .container-title .title {
+    width: 10rem;
+  }
+  /* social-icons */
+  .social-icon {
+    margin-top: 2.5rem;
+  }
   header,
   header.sticky {
     padding: 10px 20px;
@@ -28,7 +77,7 @@
     display: none;
   }
   header .navigation.active {
-    width: 100%;
+    width: 100vw;
     height: calc(100% - 60px);
     position: fixed;
     top: 60px;
