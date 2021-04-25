@@ -196,10 +196,42 @@
   .social-icon a {
     margin: 0 1rem;
   }
+  section .creative .images {
+    left: 0rem;
+    opacity: 0.75;
+  }
+  section .creative .images .img1 {
+    opacity: 0;
+  }
+  .container-rectangle2 {
+    left: 12rem;
+  }
 }
 @media (max-width: 650px) {
   .banner .mainTitle {
     top: 3em;
+  }
+  section .creative .col-text {
+    margin: 4rem 70rem 0 5rem;
+  }
+  section .creative .col-text h2 {
+    font-size: 3rem;
+  }
+  section .creative .col-text .separator {
+    width: 9rem;
+  }
+  section .creative .col-text p {
+    font-size: 1.2rem;
+  }
+  section .creative .images {
+    left: -10rem;
+    opacity: 0.75;
+  }
+  .container-rectangle2 {
+    left: 0rem;
+  }
+  section .creative .col-text .btn {
+    z-index: 50;
   }
 }
 @media (max-width: 550px) {
@@ -220,5 +252,19 @@
   }
   .menuToggle {
     margin-top: 0rem;
+  }
+}
+@media (max-width: 400px) {
+  section .creative .col-text {
+    margin: 3rem 70rem 0 3rem;
+  }
+  section .creative .col-text h2 {
+    font-size: 2.85rem;
+  }
+  section .creative .col-text .separator {
+    width: 9rem;
+  }
+  section .creative .col-text p {
+    font-size: 1.2rem;
   }
 }

@@ -105,11 +105,10 @@ html {
   margin: 0;
 }
 .container-large {
-  width: 1602px;
   padding-right: 3rem;
-  padding-left: 3rem;
+  padding-left: 30rem;
   margin-right: 0;
-  margin-left: 0;
+  margin-left: 10rem;
 }
 /* back to top */
 #myBtn {
@@ -355,7 +354,7 @@ header li {
   margin: 0;
   padding: 0;
 }
-.rectangle {
+.container-rectangle .rectangle {
   width: 100%;
   height: 100%;
   border: 15px solid var(--clr-primary-2);
@@ -367,9 +366,42 @@ header li {
 section .creative {
   height: 90vh;
   width: 100vw;
-  background-color: var(--clr-grey-2);
+  background-color: var(--clr-white);
   overflow: hidden;
   position: absolute;
+}
+section .creative .col-text {
+  margin: 8rem 70rem 0 13.5rem;
+  width: 24.2rem;
+  height: 40rem;
+  position: relative;
+}
+section .creative .col-text h2 {
+  color: var(--clr-black-2);
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+section .creative .col-text h2 span {
+  color: var(--clr-primary-1);
+}
+section .creative .col-text .separator {
+  border: 0.15rem solid var(--clr-primary-1);
+  background-color: var(--clr-primary-1);
+  width: 10rem;
+  height: 0.05rem;
+  margin: 2rem 0;
+}
+section .creative .col-text p {
+  color: var(--clr-black-1);
+  font-family: Lato-light;
+  font-size: 1.3rem;
+  letter-spacing: 0.01rem;
+  line-height: 1.65rem;
+  margin-bottom: 3rem;
 }
 section .creative .images {
   width: 120rem;
@@ -394,4 +426,25 @@ section .creative img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* rectangle_2 */
+.container-rectangle2 {
+  position: absolute;
+  top: -37rem;
+  left: 45rem;
+}
+.container-rectangle2 .row {
+  box-sizing: border-box;
+  height: 720px;
+  width: 720px;
+  margin: 0;
+  padding: 0;
+}
+.container-rectangle2 .rectangle {
+  border: 27px solid var(--clr-primary-2);
+  opacity: 0.49;
+  background-color: transparent;
+  transform: rotate(45deg);
+  overflow: hidden;
 }
