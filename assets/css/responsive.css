@@ -29,6 +29,9 @@
   .menuToggle {
     margin-top: 0rem;
   }
+  section .team .col-text {
+    margin: 6rem auto auto auto;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .container-large {
@@ -206,6 +209,9 @@
   .container-rectangle2 {
     left: 12rem;
   }
+  section .team .col-text {
+    margin: 6rem auto auto 2rem;
+  }
 }
 @media (max-width: 650px) {
   .banner .mainTitle {
@@ -252,6 +258,9 @@
   }
   .menuToggle {
     margin-top: 0rem;
+  }
+  section .team .col-text {
+    margin: 6rem auto -3rem 2rem;
   }
 }
 @media (max-width: 400px) {

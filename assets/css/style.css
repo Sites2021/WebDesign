@@ -376,7 +376,8 @@ section .creative .col-text {
   height: 40rem;
   position: relative;
 }
-section .creative .col-text h2 {
+section .creative .col-text h2,
+section .team .col-text h2 {
   color: var(--clr-black-2);
   text-transform: uppercase;
   font-family: Lato;
@@ -385,17 +386,20 @@ section .creative .col-text h2 {
   letter-spacing: 2px;
   line-height: 1;
 }
-section .creative .col-text h2 span {
+section .creative .col-text h2 span,
+section .team .col-text h2 span {
   color: var(--clr-primary-1);
 }
-section .creative .col-text .separator {
+section .creative .col-text .separator,
+section .team .col-text .separator {
   border: 0.15rem solid var(--clr-primary-1);
   background-color: var(--clr-primary-1);
   width: 10rem;
   height: 0.05rem;
   margin: 2rem 0;
 }
-section .creative .col-text p {
+section .creative .col-text p,
+section .team .col-text p {
   color: var(--clr-black-1);
   font-family: Lato-light;
   font-size: 1.3rem;
@@ -447,4 +451,55 @@ section .creative img {
   background-color: transparent;
   transform: rotate(45deg);
   overflow: hidden;
+}
+/* Team Section */
+.fixer {
+  height: 90vh;
+  width: 100vw;
+  background-color: var(--clr-grey-2);
+  overflow: hidden;
+  /* position: relative; */
+}
+section .team {
+  height: fit-content;
+  width: 100vw;
+  background-color: #2f2f2f;
+  overflow: hidden;
+  /* position: relative; */
+}
+section .team .col-text {
+  margin: 6rem auto auto 13.5rem;
+  width: 24.2rem;
+  height: 40rem;
+  /* position: relative; */
+}
+section .team .teamImg {
+  margin-top: 6rem;
+}
+section .team .teamImg .row .col {
+  margin: 0rem 2rem;
+}
+section .team .teamImg .row .col h2 {
+  color: var(--clr-primary-1);
+  font-family: Lato;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+section .team .teamImg .row .col p {
+  color: var(--clr-grey-1);
+  font-family: Lato;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: -0.75rem;
+}
+section .team .teamImg .row {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+section .team .teamImg .imgDiv {
+  display: flex;
+  flex-direction: column;
 }
