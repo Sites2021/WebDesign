@@ -26,6 +26,7 @@
 /* Fonts */
 body,
 html {
+  width: 100vw !important;
   max-width: 100vw;
   padding: 0;
   margin: 0;
@@ -35,6 +36,7 @@ html {
   font-weight: 300;
   scroll-behavior: smooth;
   scrollbar-width: none;
+  overflow-x: hidden !important;
 }
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
@@ -98,6 +100,10 @@ html {
   padding: 28px 72px;
   color: var(--clr-primary);
 }
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
 .container-large {
   width: 1602px;
   padding-right: 3rem;
@@ -105,39 +111,53 @@ html {
   margin-right: 0;
   margin-left: 0;
 }
-/* HEADER */
+/* back to top */
+#myBtn {
+  width: 45px;
+  height: 45px;
+  background-color: var(--clr-h-txt);
+  right: 40px;
+  bottom: 70px;
+  z-index: 100;
+  display: none;
+  font-size: 24px;
+  color: var(--clr-white);
+  position: fixed;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  border: none;
+}
+#myBtn:hover {
+  background-color: var(--clr-secondary);
+}
+/* basic setup */
+/* Header */
 header {
-  z-index: 999;
+  z-index: 10;
 }
 header a {
   text-transform: uppercase;
+  text-decoration: none;
+  color: var(--clr-white);
 }
 header li {
   display: inline-block;
-  margin-right: 46px;
 }
 .header {
   position: relative;
   padding-top: 33px;
   padding-bottom: 33px;
 }
-.header .menu {
-  z-index: 999;
-}
-.header .menu li:nth-child(1),
-.header .menu li:nth-child(2),
-.header .menu li:nth-child(3) {
-  float: left;
-}
-.header .menu li:nth-child(4),
-.header .menu li:nth-child(5),
-.header .menu li:nth-child(6) {
-  float: right;
+.header .menu,
+.header .menu1 {
+  z-index: 10;
 }
 .header .menu a,
-.menu.active {
+.menu.active,
+.header .menuDiv a {
   color: var(--clr-white);
-  font-size: 14px;
+  font-size: 1.15rem;
   position: relative;
   text-decoration: none;
 }
@@ -147,9 +167,21 @@ header li {
   -ms-flex-align: center;
   align-items: center;
 }
+.header .row .menuDiv {
+  display: flex;
+}
+.header .row .menuDiv .col li a {
+  margin: 0 1.5rem;
+}
+.header .row .menuDiv .align-self-end li a:last-child {
+  margin-right: 3rem;
+}
 /* Menu Button  */
+.mobile-menu {
+  display: none;
+}
 .menu-button {
-  z-index: 1000;
+  z-index: 15;
   display: none;
   height: 30px;
   background-color: transparent;
@@ -165,12 +197,16 @@ header li {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   transition-delay: 0s, 0.2s;
+  background-color: var(--clr-primary-1);
+  z-index: 15;
 }
 .menu-button.active span:after {
   margin-top: 0;
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   transition-delay: 0s, 0.2s;
+  background-color: var(--clr-primary-1);
+  z-index: 15;
 }
 .menu-button span {
   margin: 0 auto;
@@ -204,31 +240,19 @@ header li {
   background-color: var(--clr-white);
   display: block;
 }
-/* first section */
-.container-rectangle .row {
-  display: flex;
-  justify-content: center;
-}
-.rectangle {
-  height: 679px;
-  width: 679px;
-  border: 15px solid var(--clr-primary-2);
-  background-color: transparent;
-  transform: rotate(45deg);
-  position: absolute;
-  top: -30rem;
-  margin: 0;
-}
-/* banner */
+/* Banner */
 .banner {
   background: url(../images/banner.png);
-  width: 100vw;
+  width: 100vw !important;
   height: 130vh;
   background-size: cover;
-  background-blend-mode: screen;
   background-position: center top;
+  overflow: hidden;
 }
 .banner .mainTitle {
+  position: absolute;
+  top: 20em;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,17 +273,22 @@ header li {
   margin-bottom: 5rem;
 }
 /* title */
+.container-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container-title .title {
   width: 40rem;
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 0rem;
+  top: 2rem;
 }
 .container-title .title h2 {
   color: var(--clr-white);
-  letter-spacing: -0.25rem;
-  font-size: 4rem;
+  letter-spacing: -0.1rem;
+  font-size: 5rem;
   font-weight: 900;
 }
 .container-title .title span {
@@ -268,28 +297,35 @@ header li {
 }
 .container-title .rectangle-line {
   border: 0.15rem solid var(--clr-grey-2);
-  width: 7rem;
+  background-color: var(--clr-grey-2);
+  width: 10rem;
   height: 0.05rem;
   position: absolute;
-  top: 6.1rem;
+  margin: 0;
+  top: 8.5rem;
 }
 /* social-icons */
+.social-icons {
+  width: fit-content;
+  position: absolute;
+  top: 10rem;
+}
 .social-icon {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  align-items: center;
   padding: 0;
 }
 .social-icon a {
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 3.75rem;
+  height: 3.75rem;
   display: inline-block;
-  color: var(--clr-white);
-  font-size: 1.6rem;
+  color: transparent;
+  font-size: 2rem;
   border: var(--clr-white) solid 0.2rem;
   border-radius: 100%;
   text-align: center;
-  margin: 0 0.65rem;
+  margin: 0 1.5rem;
 }
 .social-icon ul {
   padding: 0;
@@ -299,11 +335,33 @@ header li {
   text-decoration: none;
   list-style-type: none;
 }
+.social-icon li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .social-icon li:hover a {
   opacity: 0.7;
 }
 .social-icon li i {
   color: var(--clr-white);
+}
+/* rectangle */
+.container-rectangle .row {
+  width: 100vw;
+  height: 100vw;
+  position: relative;
+  top: -120rem;
+  margin: 0;
+  padding: 0;
+}
+.rectangle {
+  width: 100%;
+  height: 100%;
+  border: 15px solid var(--clr-primary-2);
+  background-color: transparent;
+  transform: rotate(45deg);
+  overflow: hidden;
 }
 /* creative section */
 section .creative {
@@ -336,29 +394,4 @@ section .creative img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.wrapper {
-  width: 100vw;
-  position: relative;
-  margin: 0 auto;
-}
-/* back to top */
-#myBtn {
-  width: 45px;
-  height: 45px;
-  background-color: var(--clr-h-txt);
-  right: 40px;
-  bottom: 70px;
-  z-index: 9;
-  display: none;
-  font-size: 24px;
-  color: var(--clr-white);
-  position: fixed;
-  text-align: center;
-  line-height: 45px;
-  cursor: pointer;
-  border: none;
-}
-#myBtn:hover {
-  background-color: var(--clr-secondary);
 }

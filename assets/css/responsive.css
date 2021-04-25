@@ -1,4 +1,46 @@
+@media only screen and (max-width: 1700px) {
+  .container-title .title {
+    top: 0.5rem;
+  }
+  .container-title .rectangle-line {
+    top: 7rem;
+  }
+  .social-icon a {
+    margin: 0 6rem;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .social-icon a {
+    margin: 0 4rem;
+  }
+  .banner .mainTitle {
+    top: 3em;
+  }
+}
+@media (max-width: 1400px) {
+  .banner .mainTitle {
+    top: 4em;
+  }
+  .container-large {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+  }
+  .menuToggle {
+    margin-top: 0rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container-large {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+}
 @media only screen and (max-width: 1200px) {
+  .banner .mainTitle {
+    top: 10em;
+  }
   .banner .mainTitle h2 {
     margin: 5rem 0 5rem 0;
     font-size: 5rem;
@@ -25,6 +67,11 @@
     top: 4.2rem;
   }
   /* social-icons */
+  .social-icons {
+    width: fit-content;
+    position: absolute;
+    top: 7rem;
+  }
   .social-icon {
     margin-top: 0;
   }
@@ -32,7 +79,7 @@
     width: 2.75rem;
     height: 2.75rem;
     font-size: 1.6rem;
-    margin: 0 2rem;
+    margin: 0 4rem;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -41,6 +88,11 @@
   }
 }
 @media (max-width: 992px) {
+  .container-large {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+  }
   .banner {
     background-position: center;
   }
@@ -53,7 +105,7 @@
   }
   /* social-icons */
   .social-icon {
-    margin-top: 2.5rem;
+    margin-top: 0rem;
   }
   header,
   header.sticky {
@@ -63,10 +115,10 @@
     display: none;
   }
   header .navigation.active {
-    /* width: 100vw; */
-    height: calc(100% - 60px);
+    width: 100vw;
+    height: 100vh;
     position: fixed;
-    top: 60px;
+    top: 0px;
     left: 0;
     display: flex;
     justify-content: center;
@@ -85,6 +137,12 @@
   }
   .menu-button {
     display: inline-block;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .menuDiv {
+    display: none !important;
   }
   /* .header {
     position: relative;
@@ -129,14 +187,38 @@
   header.sticky .menuToggle {
     filter: invert(1);
   }
-}
-@media (max-width: 550px) {
-  .menuToggle {
-    margin-top: 0rem;
+  .container-title .title {
+    top: -2rem;
+  }
+  .container-title .rectangle-line {
+    top: 4rem;
+  }
+  .social-icon a {
+    margin: 0 1rem;
   }
 }
-@media only screen and (min-width: 900px) {
+@media (max-width: 650px) {
+  .banner .mainTitle {
+    top: 3em;
+  }
+}
+@media (max-width: 550px) {
+  .banner .mainTitle {
+    top: 4em;
+  }
+  .banner .mainTitle h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+  .banner .mainTitle p {
+    font-size: 1.5rem;
+  }
   .container-large {
-    width: 1000px;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+  }
+  .menuToggle {
+    margin-top: 0rem;
   }
 }
