@@ -16,7 +16,12 @@
   .banner .mainTitle {
     top: 3em;
   }
+  section .team .row {
+    display: flex;
+    justify-content: center;
+  }
 }
+
 @media (max-width: 1400px) {
   .banner .mainTitle {
     top: 4em;
@@ -29,6 +34,7 @@
   .menuToggle {
     margin-top: 0rem;
   }
+
   section .team .col-text {
     margin: 6rem auto auto auto;
   }
@@ -213,20 +219,36 @@
     margin: 6rem auto auto 2rem;
   }
 }
+@media (max-width: 790px) {
+  section .gallery .row .imgContainer {
+    width: 76rem !important;
+  }
+  section .gallery .col-text {
+    margin: 4rem 70rem 0 3rem;
+  }
+}
 @media (max-width: 650px) {
   .banner .mainTitle {
     top: 3em;
   }
-  section .creative .col-text {
+  section .creative .col-text,
+  section .team .col-text,
+  section .gallery .col-text {
     margin: 4rem 70rem 0 5rem;
   }
-  section .creative .col-text h2 {
+  section .gallery .col-text {
+    margin: 4rem 70rem 0 2rem !important;
+  }
+  section .creative .col-text h2,
+  section .team .col-text h2,
+  section .gallery .col-text h2 {
     font-size: 3rem;
   }
   section .creative .col-text .separator {
     width: 9rem;
   }
-  section .creative .col-text p {
+  section .creative .col-text p,
+  section .gallery .col-text p {
     font-size: 1.2rem;
   }
   section .creative .images {
