@@ -284,6 +284,9 @@
   section .team .col-text {
     margin: 6rem auto -3rem 2rem;
   }
+  section .gallery {
+    height: 130vh !important;
+  }
   section .gallery .row .imgContainer {
     display: none;
   }
