@@ -285,16 +285,23 @@
     margin: 6rem auto -3rem 2rem;
   }
   section .gallery {
-    height: 130vh !important;
+    height: fit-content;
   }
   section .gallery .row .imgContainer {
     display: none;
   }
   section .gallery .col-text {
     width: 16rem !important;
+    margin-bottom: 3rem!;
+  }
+  section .gallery .col-text .btn {
+    margin-bottom: 3rem !important;
   }
 }
 @media (max-width: 400px) {
+  section .banner {
+    height: 170vh;
+  }
   section .creative .col-text {
     margin: 3rem 70rem 0 3rem;
   }
