@@ -284,6 +284,12 @@
   section .team .col-text {
     margin: 6rem auto -3rem 2rem;
   }
+  section .gallery .row .imgContainer {
+    display: none;
+  }
+  section .gallery .col-text {
+    width: 16rem !important;
+  }
 }
 @media (max-width: 400px) {
   section .creative .col-text {
