@@ -520,7 +520,6 @@ section .gallery {
 section .gallery .row .col-text {
   margin: 8rem 0 0 12rem;
   width: 32rem;
-  height: 40rem;
   overflow: hidden;
 }
 section .gallery .row .imgContainer {
