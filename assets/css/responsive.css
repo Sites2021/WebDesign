@@ -221,10 +221,22 @@
 }
 @media (max-width: 790px) {
   section .gallery .row .imgContainer {
-    width: 76rem !important;
+    display: none;
   }
   section .gallery .col-text {
     margin: 4rem 70rem 0 3rem;
+  }
+  .slideshow-container {
+    display: block;
+  }
+  .slideshow-container {
+    margin: 3rem auto !important;
+    /* width: 40rem !important; */
+    width: auto !important;
+    height: 30rem !important;
+  }
+  img {
+    height: 100% !important;
   }
 }
 @media (max-width: 650px) {
@@ -313,5 +325,8 @@
   }
   section .creative .col-text p {
     font-size: 1.2rem;
+  }
+  .slideshow-container {
+    height: 25rem !important;
   }
 }
