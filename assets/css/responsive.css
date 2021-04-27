@@ -20,6 +20,21 @@
     display: flex;
     justify-content: center;
   }
+  section .chooseUs .row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  section .chooseUs .row .imgDiv {
+    display: flex;
+    justify-content: center;
+  }
+  section .chooseUs .row .col-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -253,7 +268,8 @@
   }
   section .creative .col-text h2,
   section .team .col-text h2,
-  section .gallery .col-text h2 {
+  section .gallery .col-text h2,
+  section .chooseUs .col-text h2 {
     font-size: 3rem;
   }
   section .creative .col-text .separator {
@@ -272,6 +288,28 @@
   }
   section .creative .col-text .btn {
     z-index: 50;
+  }
+
+  section .chooseUs .col-text .contentBox {
+    flex-direction: column;
+  }
+  section .chooseUs .col-text .contentBox .textBox {
+    width: 100vw;
+    text-align: justify;
+    padding-right: 2.5rem !important;
+  }
+  section .chooseUs {
+    width: fit-content;
+  }
+  section .chooseUs .row .col-text {
+    display: block;
+  }
+  section .chooseUs .col-text h2 {
+    font-size: 2.75rem;
+    margin-left: 1.75rem !important;
+  }
+  section .chooseUs .col-text .contentBox {
+    margin-left: 1rem;
   }
 }
 @media (max-width: 550px) {

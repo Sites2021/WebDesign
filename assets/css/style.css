@@ -377,9 +377,8 @@ section .creative .col-text {
   height: 40rem;
   position: relative;
 }
-section .creative .col-text h2,
-section .team .col-text h2,
-section .gallery .col-text h2 {
+/* heading style */
+.h2-title {
   color: var(--clr-black-2);
   text-transform: uppercase;
   font-family: Lato;
@@ -388,22 +387,19 @@ section .gallery .col-text h2 {
   letter-spacing: 2px;
   line-height: 1;
 }
-section .creative .col-text h2 span,
-section .team .col-text h2 span,
-section .gallery .col-text h2 span {
+/* span in primary color */
+.span-Primary {
   color: var(--clr-primary-1);
 }
-section .creative .col-text .separator,
-section .team .col-text .separator {
+
+.separator {
   border: 0.15rem solid var(--clr-primary-1);
   background-color: var(--clr-primary-1);
   width: 10rem;
   height: 0.05rem;
   margin: 2rem 0;
 }
-section .creative .col-text p,
-section .team .col-text p,
-section .gallery .col-text p {
+.p-title {
   color: var(--clr-black-1);
   font-family: Lato-light;
   font-size: 1.3rem;
@@ -537,4 +533,43 @@ section .gallery .row .imgContainer .imgDiv4 {
 /* Slideshow */
 .slideshow-container {
   display: none;
+} /*Slideshow*/
+/* Choose Us */
+.chooseUs {
+  height: fit-content;
+  width: 100vw;
+  background-color: var(--clr-grey-4);
+  overflow: hidden;
+  /* position: relative; */
+}
+.chooseUs .row {
+  margin: 6rem 0 !important;
+}
+.chooseUs h2 {
+  margin-left: 5rem;
+}
+.chooseUs .col-text .contentBox {
+  display: flex;
+  flex-direction: row;
+  width: 32rem;
+  margin: 3rem 0 3rem 5rem;
+}
+.chooseUs .col-text .contentBox .iconBox {
+  width: 6rem;
+  height: 6rem;
+  margin-right: 2.5rem;
+}
+.chooseUs .fa {
+  font-size: 5rem;
+  color: var(--clr-primary-1);
+}
+.chooseUs .contentBox h3 {
+  font-size: 1.45rem;
+  text-transform: uppercase;
+  font-family: "Lato";
+  color: var(--clr-white);
+}
+.chooseUs .contentBox p {
+  font-family: "Lato";
+  color: var(--clr-white-2);
 }
