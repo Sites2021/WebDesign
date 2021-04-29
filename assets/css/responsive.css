@@ -8,6 +8,20 @@
   .social-icon a {
     margin: 0 6rem;
   }
+  .services .row .contentBox .contentItem {
+    padding: 0 1rem;
+  }
+  .services .row .imgDiv {
+    height: fit-content;
+  }
+}
+@media only screen and (max-width: 1550px) {
+  .services .row .col-text {
+    margin: 6rem 2rem 6rem 1rem;
+  }
+  .services .row .contentBox {
+    transform: translate(0);
+  }
 }
 @media only screen and (max-width: 1500px) {
   .social-icon a {
@@ -109,6 +123,21 @@
 @media only screen and (max-width: 1200px) {
   .container-large {
     padding-right: 0;
+  }
+}
+@media only screen and (max-width: 1105px) {
+  .services .row .col-text {
+    margin-left: 18rem;
+    align-items: center;
+  }
+  .services .row .col-text h2 {
+    text-align: center;
+  }
+  .services .row .col-text p {
+    text-align: center;
+  }
+  .services .row .btn {
+    margin-right: 2rem;
   }
 }
 @media (max-width: 992px) {
@@ -232,6 +261,13 @@
   }
   section .team .col-text {
     margin: 6rem auto auto 2rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .services .row .col-text {
+    margin-left: 0;
+    display: flex;
+    align-items: center !important;
   }
 }
 @media (max-width: 790px) {

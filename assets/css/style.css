@@ -570,7 +570,7 @@ section .gallery .row .imgContainer .imgDiv4 {
   color: var(--clr-primary-1);
 }
 .chooseUs .contentBox h3 {
-  font-size: 1.45rem;
+  font-size: 1.35rem;
   text-transform: uppercase;
   font-family: "Lato";
   color: var(--clr-white);
@@ -589,6 +589,9 @@ section .gallery .row .imgContainer .imgDiv4 {
 .services .row {
   display: flex;
 }
+.services .row .btn {
+  margin-bottom: 2rem;
+}
 .services .row .col-text {
   margin: 6rem 10rem auto;
 }
@@ -600,18 +603,41 @@ section .gallery .row .imgContainer .imgDiv4 {
   width: 16rem;
 }
 .services .row .imgDiv {
-  width: fit-content;
-  height: 95vh !important;
-  background-size: cover;
-}
-.services .row .imgDiv {
   background: url(../images/services.png);
   height: fit-content;
+  width: fit-content;
+  background-size: cover;
 }
 .services .row .contentBox {
   background: var(--clr-grey-4);
   width: 100%;
-  margin: 6rem 25rem 6rem 0;
+  margin: 6.5rem 25rem 6rem 0;
   z-index: 3 !important;
-  transform: translate(-10rem);
+  transform: translate(-9rem);
+}
+.services .row .contentBox .contentItem {
+  padding: 0 3rem;
+}
+.services .row .contentBox .fa {
+  font-size: 4.5rem;
+  border: 0.2rem solid var(--clr-white);
+  border-radius: 50%;
+  padding: 1rem;
+  color: var(--clr-white);
+  margin: 1.75rem;
+  font-weight: 600;
+}
+.services .row .contentBox h3 {
+  font-size: 1.35rem;
+  font-family: "Lato";
+  font-weight: 600;
+  color: var(--clr-primary-1);
+  text-transform: uppercase;
+}
+.services .contentBox p {
+  width: 20rem;
+  text-align: center;
+  font-family: "Lato";
+  color: var(--clr-grey-2);
+  margin-bottom: 1.75rem;
 }
