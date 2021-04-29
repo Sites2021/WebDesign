@@ -1,29 +1,28 @@
 // Date
 const date = (document.getElementById("date").innerHTML = new Date().getFullYear());
 
-// Mobile Menu
-let menu = $('.menu');
-$('.menu-button').on('click', function(){
-		menu.toggle();
-		$(this).toggleClass('active');
-		menu.parent().toggleClass('mobile-menu');
-	});
+// Hamburger menu / Stop Scrolll
+	function toggleMenu() {
+		const menuToggle = document.querySelector('.menuToggle');
+		const navigation = document.querySelector('.navigation');
+		const menuButton = document.querySelector('.menu-button');
+		menuToggle.classList.toggle('active');
+		navigation.classList.toggle('active');
+		menuButton.classList.toggle('active');
 
-	// Back to Top
-var mybutton = document.getElementById("myBtn");
+    if ($('.navigation').hasClass('active')) {
+  const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = 'fixed';
+          } else {
+  const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+          }
+	}
 
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
+window.addEventListener('scroll', () => {
+document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+});

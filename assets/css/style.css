@@ -36,7 +36,7 @@ html {
   font-weight: 300;
   scroll-behavior: smooth;
   scrollbar-width: none;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
@@ -49,6 +49,7 @@ html {
   --clr-primary-3: #e18e23;
   --clr-grey-1: #a3a3a3;
   --clr-grey-2: #989898;
+  --clr-grey-transparent: #98989893;
   --clr-grey-3: #707070;
   --clr-grey-4: #2f2f2f;
   --clr-grey-5: #453c3c;
@@ -67,6 +68,9 @@ html {
   --radius: 0.5rem;
   --radius-sm: 0.25rem;
   scroll-behavior: smooth;
+}
+.stop-scroll {
+  overflow: hidden;
 }
 /* Btn */
 .btn {
@@ -105,23 +109,22 @@ html {
   margin: 0;
 }
 .container-large {
-  width: 1000px;
-  padding-right: 3rem;
-  padding-left: 30rem;
-  margin-right: 0;
-  margin-left: 10rem;
+  width: 1600px;
+  margin: auto;
+  padding: 0px;
 }
 /* back to top */
 #myBtn {
-  width: 45px;
-  height: 45px;
-  background-color: var(--clr-h-txt);
-  right: 40px;
-  bottom: 70px;
-  z-index: 100;
+  width: 3rem;
+  height: 3rem;
+  background: var(--clr-grey-transparent);
+  border-radius: 1rem;
+  right: 2.5rem;
+  bottom: 4.5rem;
+  z-index: 1000;
   display: none;
-  font-size: 24px;
-  color: var(--clr-white);
+  font-size: 1.75rem;
+  color: var(--clr-primary-1);
   position: fixed;
   text-align: center;
   line-height: 45px;
@@ -129,7 +132,9 @@ html {
   border: none;
 }
 #myBtn:hover {
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-grey-3);
+  transform: scale(1.25);
+  transition: ease-in-out 0.3s;
 }
 /* basic setup */
 /* Header */
@@ -365,14 +370,14 @@ header li {
 }
 /* creative section */
 section .creative {
-  height: 90vh;
+  height: 95vh;
   width: 100vw;
   background-color: var(--clr-white);
   overflow: hidden;
   position: absolute;
 }
 section .creative .col-text {
-  margin: 8rem 70rem 0 13.5rem;
+  margin: 6rem 70rem 0 13.5rem;
   width: 24.2rem;
   height: 40rem;
   position: relative;
@@ -383,9 +388,10 @@ section .creative .col-text {
   text-transform: uppercase;
   font-family: Lato;
   font-size: 4rem;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 2px;
   line-height: 1;
+  margin-bottom: 3rem;
 }
 /* span in primary color */
 .span-Primary {
@@ -402,15 +408,15 @@ section .creative .col-text {
 .p-title {
   color: var(--clr-black-1);
   font-family: Lato-light;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   letter-spacing: 0.01rem;
-  line-height: 1.65rem;
+  line-height: 1.8rem;
   margin-bottom: 3rem;
 }
 section .creative .images {
   width: 120rem;
   position: absolute;
-  top: 6.5rem;
+  top: 8rem;
   left: 35rem;
   transform: rotate(-45deg);
   display: flex;
@@ -454,7 +460,7 @@ section .creative img {
 }
 /* **** FIXER **** */
 .fixer {
-  height: 90vh;
+  height: 95vh;
   width: 100vw;
   background-color: var(--clr-grey-2);
   overflow: hidden;
@@ -514,8 +520,8 @@ section .gallery {
   /* position: relative; */
 }
 section .gallery .row .col-text {
-  margin: 8rem 0 0 12rem;
-  width: 32rem;
+  margin: 6rem 0 0 12rem;
+  width: 25rem;
   overflow: hidden;
 }
 section .gallery .row .imgContainer {
@@ -572,4 +578,40 @@ section .gallery .row .imgContainer .imgDiv4 {
 .chooseUs .contentBox p {
   font-family: "Lato";
   color: var(--clr-white-2);
+}
+/* Services section */
+.services {
+  height: fit-content;
+  width: 100vw;
+  background-color: var(--clr-white);
+  overflow: hidden;
+}
+.services .row {
+  display: flex;
+}
+.services .row .col-text {
+  margin: 6rem 10rem auto;
+}
+.services .row .col-text h2 {
+  text-align: right;
+}
+.services .row .col-text p {
+  text-align: right;
+  width: 16rem;
+}
+.services .row .imgDiv {
+  width: fit-content;
+  height: 95vh !important;
+  background-size: cover;
+}
+.services .row .imgDiv {
+  background: url(../images/services.png);
+  height: fit-content;
+}
+.services .row .contentBox {
+  background: var(--clr-grey-4);
+  width: 100%;
+  margin: 6rem 25rem 6rem 0;
+  z-index: 3 !important;
+  transform: translate(-10rem);
 }

@@ -103,8 +103,7 @@
 				<div class="separator"></div>
 				<p class="p-title"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestias fuga incidunt nam
 						aliquam ipsam accusantium aut reiciendis!</span><br>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos soluta deleniti neque est
-					nesciunt accusamus perspiciatis, id illum ea itaque obcaecati quod facilis nam nobis velit.</p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id illum ea itaque obcaecati quod facilis nam nobis velit.</p>
 				<a href="#" class="btn ">read more</a>
 			</div> <!-- col-text -->
 			<div class="container col col-images">
@@ -252,6 +251,32 @@
 			</div> <!-- row -->
 		</div> <!-- con-fluid -->
 	</section> <!-- ChooseUs -->
+	<!-- Best services -->
+	<section>
+		<div class="services container-fluid">
+			<div class="row">
+				<div class="col-md-4 col-text d-flex flex-column justify-content-start align-items-end">
+	   	<h2 class="h2-title"><span class="span-Primary">our</span><br>best<br>services</h2>
+	   	<p class="p-title"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestias fuga incidunt nam
+	   			aliquam ipsam accusantium aut reiciendis!</span><br>
+	   		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos soluta deleniti neque est.</p>
+	   	<a href="#" class="btn ">read more</a>
+	   </div> <!-- col-text -->
+				<div class="col imgDiv">
+						<div class="col contentBox d-flex flex-column justify-content-start align-items-end mx-auto">
+						<div class="contentItem">
+							<div class="iconBox"><i class="fa fa-globe" aria-hidden="true"></i></div>
+							<div class="textBox">
+								<h3>lorem ipsum dolor</h3>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, voluptatem voluptas. Nulla ullam qui nisi
+									ipsum voluptatum libero, sunt quidem?</p>
+							</div>
+						</div>
+					</div>
+					</div> <!-- imgDiv -->
+				</div> <!-- row -->
+		</div> <!-- services -->
+	</section> <!-- Best Services -->
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
 
 <!-- SCRIPTS -->
@@ -275,15 +300,27 @@
 <script src="assets/js/main.js"></script>
 <!-- SlideShowJS -->
 <script src="./assets/js/slideshow.js"></script>
+<!-- Scroll-stop -->
+<script src="./assets/js/stop-scroll.js"></script>
+<!-- Back to Top -->
 <script>
-	function toggleMenu() {
-		const menuToggle = document.querySelector('.menuToggle');
-		const navigation = document.querySelector('.navigation');
-		const menuButton = document.querySelector('.menu-button');
-		menuToggle.classList.toggle('active');
-		navigation.classList.toggle('active');
-		menuButton.classList.toggle('active');
-	}
+	var mybutton = document.getElementById("myBtn");
+
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+		
 </script>
 </body>
 </html>
