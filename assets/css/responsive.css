@@ -130,8 +130,9 @@
 }
 @media only screen and (max-width: 1105px) {
   .services .row .col-text {
-    margin-left: 18rem;
-    align-items: center;
+    margin: 3rem auto;
+    flex: 0 0 auto;
+    align-items: center !important;
   }
   .services .row .col-text h2 {
     text-align: center;
