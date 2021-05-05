@@ -22,6 +22,9 @@
   .services .row .contentBox {
     transform: translate(0);
   }
+  .testimonials .col1 {
+    margin-left: 0.1rem;
+  }
 }
 @media only screen and (max-width: 1500px) {
   .social-icon a {
@@ -138,6 +141,12 @@
   }
   .services .row .btn {
     margin-right: 2rem;
+  }
+  .testimonials .col1 {
+    width: fit-content;
+    /* display: flex;
+    justify-content: flex-end !important;
+    align-items: flex-end; */
   }
 }
 @media (max-width: 992px) {
@@ -386,6 +395,15 @@
   section .gallery .col-text .btn {
     margin-bottom: 3rem !important;
   }
+  .testimonials .col1 .h2-title {
+    text-align: center;
+    width: 15rem;
+    /* margin: auto; */
+  }
+  .testimonials .col1 .quotes {
+    margin: auto;
+    width: 20rem;
+  }
 }
 @media (max-width: 400px) {
   section .banner {
@@ -405,5 +423,9 @@
   }
   .slideshow-container {
     height: 25rem !important;
+  }
+  .testimonials .col1 .quotes {
+    margin: auto;
+    width: 15rem;
   }
 }
