@@ -70,6 +70,9 @@
   section .team .col-text {
     margin: 6rem auto auto auto;
   }
+  .footer .contentBox {
+    width: 75vw;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .container-large {
@@ -77,6 +80,7 @@
     margin: 0;
     padding: 0;
   }
+
 }
 @media only screen and (max-width: 1200px) {
   .banner .mainTitle {
@@ -122,6 +126,9 @@
     font-size: 1.6rem;
     margin: 0 4rem;
   }
+  .footer .contentBox {
+    width: 80vw;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .container-large {
@@ -148,6 +155,9 @@
     /* display: flex;
     justify-content: flex-end !important;
     align-items: flex-end; */
+  }
+  .footer .contentBox {
+    width: 95vw;
   }
 }
 @media (max-width: 992px) {
@@ -271,6 +281,13 @@
   }
   section .team .col-text {
     margin: 6rem auto auto 2rem;
+  }
+  .footer .contentBox {
+    width: 95vw;
+  }
+  .footer .contentBox .addressCol {
+    display: flex;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -428,5 +445,8 @@
   .testimonials .col1 .quotes {
     margin: auto;
     width: 15rem;
+  }
+  .social .iconBox {
+   margin: 1.5rem 1.5rem;
   }
 }

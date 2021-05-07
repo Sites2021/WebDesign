@@ -396,6 +396,7 @@ section .creative .col-text {
 /* span in primary color */
 .span-Primary {
   color: var(--clr-primary-1);
+  font-weight: 900;
 }
 
 .separator {
@@ -661,9 +662,6 @@ section .gallery .row .imgContainer .imgDiv4 {
   margin: 5rem 8.5rem 4rem 0;
   color: var(--clr-white-2);
 }
-/* .testimonials .quotes {
-  margin-right: 5rem !important;
-} */
 .testimonials .iconBox {
   font-size: 2.5rem;
   margin: 0 1rem 0 -1rem;
@@ -708,4 +706,100 @@ section .gallery .row .imgContainer .imgDiv4 {
 .testimonials .col3 .p-title span {
   font-family: "Lato";
   font-weight: 700 !important;
+}
+
+/* Social section */
+.social {
+  background: url(../images/social.png);
+  background-size: cover;
+  background-position: right;
+  min-height: 40vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: "Lato";
+}
+
+.social .iconBox {
+  padding: 1rem 1rem;
+  color: var(--clr-white);
+  box-sizing: border-box;
+  /* height: fit-content; */
+  /* width: fit-content; */
+  border: 0.2rem solid #FFFFFF;
+  border-radius: 50%;
+  margin: 2rem 2rem;
+}
+.social .iconBox i {
+  width: 2rem;
+  font-size: 2rem;
+}
+.social .iconBox a {
+  text-decoration: none !important;
+  color: var(--clr-white);
+  /* padding: 2rem; */
+}
+.social .iconBox a:hover .iconBox{
+  box-shadow: 2px 2px black;
+}
+.social .h2-title {
+  font-weight: 900;
+  color: var(--clr-white);
+}
+/* Footer */
+.footer {
+  background-color: var(--clr-grey-4);
+  height: 50vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: "Lato";
+}
+/* rectangle */
+.footer .rectangleDiv {
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+  bottom: -10rem;
+  margin: 0;
+  padding: 0;
+}
+.footer .rectangleDiv .rectangleBot {
+  width: 100%;
+  height: 100%;
+  border: 15px solid var(--clr-primary-2);
+  background-color: transparent;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+.footer .contentBox {
+  width: 65vw;
+  margin-top: 6rem;
+  color: var(--clr-white);
+}
+.footer .contentBox .col {
+  display: flex;
+}
+.footer .contentBox .telephoneCol {
+  display: flex;
+  justify-content: center;
+}
+.footer .contentBox .addressCol {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer .iconBox {
+  width: 5rem;
+}
+.footer .iconBox i {
+  width: 2rem;
+  font-size: 4rem;
+}
+.footer .iconBox a {
+  text-decoration: none !important;
+  color: var(--clr-primary-1);
+}
+.footer .contentBox .address {
+  text-transform: capitalize;
+}
+.footer .contentBox .textBox p:nth-child(1) {
+  text-transform: uppercase;
 }
