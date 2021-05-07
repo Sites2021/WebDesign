@@ -158,6 +158,12 @@
   .footer .contentBox {
     width: 95vw;
   }
+  /* section .creative {
+    height: 65vh;
+  }
+  .fixer {
+    height: 65vh;
+  } */
 }
 @media (max-width: 992px) {
   .container-large {
@@ -402,6 +408,12 @@
   }
   .menuToggle {
     margin-top: 0rem;
+  }
+  section .creative {
+    height: 125vh;
+  }
+  .fixer {
+    height: 125vh;
   }
   section .team .col-text {
     margin: 6rem auto -3rem 2rem;

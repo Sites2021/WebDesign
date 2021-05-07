@@ -35,16 +35,16 @@
 					<div class="menuDiv">
 					<div class="col align-self-start p-0 m-0">
 						<ul class="menu1">
-							<li class="mx-auto"><a href="#">home</a></li>
-							<li class="mx-auto"><a href="#">about us</a></li>
-							<li class="mx-auto"><a href="#">blog</a></li></li>
+							<li class="mx-auto"><a href="./index.html">home</a></li>
+							<li class="mx-auto"><a href="#creative">about us</a></li>
+							<li class="mx-auto"><a href="#gallery">blog</a></li></li>
 						</ul>
 					</div>
 					<div class="p-0 m-0">
 						<ul class="col align-self-end menu1">
-							<li class="mx-auto"><a href="#">services</a></li>
+							<li class="mx-auto"><a href="#services">services</a></li>
 							<li class="mx-auto"><a href="#">pages</a></li>
-							<li class="mx-auto"><a id="lastChild" href="#">contact us</a></li>
+							<li class="mx-auto"><a id="lastChild" href="#social">contact us</a></li>
 							</li>
 						</ul>
 					</div>
@@ -52,12 +52,12 @@
 					<!-- mobile-menu -->
 					<div class="menuToggle mobile-menu" onclick="toggleMenu();">
 						<ul class="menu navigation">
-							<li><a href="#" onclick="toggleMenu();">home</a></li>
-							<li><a href="#" onclick="toggleMenu();">about us</a></li>
-							<li><a href="#" onclick="toggleMenu();">blog</a></li>
-							<li><a href="#" onclick="toggleMenu();">contact us</a></li>
+							<li><a href="./index.html" onclick="toggleMenu();">home</a></li>
+							<li><a href="#creative" onclick="toggleMenu();">about us</a></li>
+							<li><a href="#gallery" onclick="toggleMenu();">blog</a></li>
+							<li><a href="#social" onclick="toggleMenu();">contact us</a></li>
 							<li><a href="#" onclick="toggleMenu();">pages</a></li>
-							<li><a href="#" onclick="toggleMenu();">services</a></li>
+							<li><a href="#services" onclick="toggleMenu();">services</a></li>
 						</ul>
 						<button type="button" class="menu-button">
 							<span></span>
@@ -98,7 +98,7 @@
 </section>
 <!-- Creative -->
 <section>
-	<div class="creative container-fluid">
+	<div class="creative container-fluid" id="creative">
 		<div class="row ">
 			<div class="col col-text">
 				<h2 class="h2-title"><span class="span-Primary">we are</span><br>creative<br>team</h2>
@@ -180,7 +180,7 @@
 </section> <!-- Our Team -->
 <!-- Gallery -->
 	<section>
-		<div class="gallery container-fluid">
+		<div class="gallery container-fluid" id="gallery">
 			<div class="row container-large">
 					<div class="col col-xxl-8 col-xl-12 col-lg-12 col-md-4 col-text">
 						<h2 class="h2-title"><span class="span-Primary">our</span><br>creative<br>work</h2>
@@ -255,7 +255,7 @@
 	</section> <!-- ChooseUs -->
 	<!-- Best services -->
 	<section>
-		<div class="services container-fluid">
+		<div class="services container-fluid" id="services">
 			<div class="row">
 				<div class="col-md-4 col-text d-flex flex-column justify-content-start align-items-end"> <!-- col-text -->
 	   	<h2 class="h2-title"><span class="span-Primary">our</span><br>best<br>services</h2>
@@ -349,7 +349,7 @@
 		</div> <!-- testimonials -->
 </section> <!-- Testimonials -->
 <section> <!-- Social -->
-	<div class="social container-fluid d-flex align-items-center">
+	<div class="social container-fluid d-flex align-items-center" id="social">
 		<div class="container">
 		<div class="row pt-5">
 			<div class="title text-center"><h2 class="h2-title"><span class="span-Primary pe-3">get</span>in touch</h2></div>
