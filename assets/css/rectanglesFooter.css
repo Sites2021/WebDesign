@@ -1,156 +1,30 @@
-@media only screen and (min-width: 2570px) {
-  body,
-  html,
-  .banner {
-    max-width: 2570px;
-  }
-  .container-rectangle .row {
-    height: 2570px;
-    width: 2570px;
-    top: -160rem;
-    transition: 0.2s;
-  }
-}
-@media only screen and (max-width: 2570px) {
-  .container-rectangle .row {
-    top: -155rem;
-    transition: 0.2s;
-  }
-}
-@media only screen and (max-width: 2300px) {
-  .container-rectangle .row {
-    top: -150rem;
-    transition: 0.2s;
-  }
-}
-@media only screen and (max-width: 2200px) {
-  .container-rectangle .row {
-    top: -140rem;
-    transition: 0.2s;
-  }
-}
-@media only screen and (max-width: 2100px) {
-  .container-rectangle .row {
-    top: -135rem;
-    transition: 0.2s;
-  }
-}
-@media only screen and (max-width: 2000px) {
-  .container-rectangle .row {
-    top: -128rem;
-    transition: 0.2s;
-  }
-}
 @media only screen and (max-width: 1900px) {
-  .container-rectangle .row {
-    top: -120rem;
-    transition: 0.2s;
-  }
-}
-@media only screen and (max-width: 1800px) {
-  .container-rectangle .row {
-    top: -115rem;
-    transition: 0.2s;
-  }
-}
-@media only screen and (max-width: 1700px) {
-  .container-rectangle .row {
-    top: -110rem;
-    transition: 0.2s;
-  }
-}
-@media only screen and (max-width: 1600px) {
-  .container-rectangle .row {
-    top: -105rem;
-    transition: 0.2s;
-  }
-  .header .row .menuDiv .align-self-end li a {
-    margin: 0 0rem;
-  }
-}
-@media only screen and (max-width: 1500px) {
-  .container-rectangle .row {
-    top: -99rem;
-    transition: 0.2s;
+  .footer .contentBox {
+    width: 65vw;
   }
 }
 @media only screen and (max-width: 1400px) {
-  .container-rectangle .row {
-    top: -91rem;
-    transition: 0.2s;
-  }
-}
-@media only screen and (max-width: 1300px) {
-  .container-rectangle .row {
-    top: -88rem;
-    transition: 0.2s;
+  .footer .contentBox {
+    width: 75vw;
   }
 }
 @media only screen and (max-width: 1200px) {
-  .container-rectangle .row {
-    top: -82rem;
-    transition: 0.2s;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .container-rectangle .row {
-    right: 1rem;
-    top: -76rem;
-    transition: 0.2s;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .container-rectangle .row {
-    top: -82rem;
-    transition: 0.2s;
+  .footer .contentBox {
+    width: 87vw;
   }
 }
 
 @media (max-width: 992px) {
-  .container-rectangle .row {
-    top: -120rem;
-    transition: 0.2s;
+  .footer .contentBox {
+    width: 15rem;
   }
-}
-@media (max-width: 700px) {
-  .container-rectangle .row {
-    top: -120rem;
-    transition: 0.2s;
+  .footer .rectangleDiv .rectangleBot {
+    bottom: -20rem;
   }
-}
-@media (max-width: 600px) {
-  .container-rectangle .row {
-    top: -120rem;
-    transition: 0.2s;
+  .footer {
+    height: fit-content;
   }
-}
-@media (max-width: 550px) {
-  .container-rectangle .row {
-    top: -120rem;
-    transition: 0.2s;
-  }
-}
-@media (max-width: 450px) {
-  .container-rectangle .row {
-    top: -120rem;
-    transition: 0.2s;
-  }
-}
-@media (max-width: 400px) {
-  .container-rectangle .row {
-    top: -120rem;
-    transition: 0.2s;
-  }
-}
-@media (max-width: 350px) {
-  .container-rectangle .row {
-    top: -120rem;
-    transition: 0.2s;
-  }
-}
-@media (max-width: 300px) {
-  .container-rectangle .row {
-    top: -120rem;
-    transition: 0.2s;
+  .footer .contentBox .iconBox {
+    padding-right: 6rem;
   }
 }

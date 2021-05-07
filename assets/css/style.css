@@ -723,9 +723,7 @@ section .gallery .row .imgContainer .imgDiv4 {
   padding: 1rem 1rem;
   color: var(--clr-white);
   box-sizing: border-box;
-  /* height: fit-content; */
-  /* width: fit-content; */
-  border: 0.2rem solid #FFFFFF;
+  border: 0.2rem solid var(--clr-white) !important;
   border-radius: 50%;
   margin: 2rem 2rem;
 }
@@ -736,9 +734,8 @@ section .gallery .row .imgContainer .imgDiv4 {
 .social .iconBox a {
   text-decoration: none !important;
   color: var(--clr-white);
-  /* padding: 2rem; */
 }
-.social .iconBox a:hover .iconBox{
+.social .iconBox a:hover .iconBox {
   box-shadow: 2px 2px black;
 }
 .social .h2-title {
@@ -752,26 +749,15 @@ section .gallery .row .imgContainer .imgDiv4 {
   width: 100vw;
   overflow: hidden;
   font-family: "Lato";
-}
-/* rectangle */
-.footer .rectangleDiv {
-  width: 50vw;
-  height: 50vw;
   position: relative;
-  bottom: -10rem;
-  margin: 0;
-  padding: 0;
 }
-.footer .rectangleDiv .rectangleBot {
-  width: 100%;
-  height: 100%;
-  border: 15px solid var(--clr-primary-2);
-  background-color: transparent;
-  transform: rotate(45deg);
-  overflow: hidden;
+.footer .row {
+  width: 50vw;
+  height: fit-content;
+  position: relative;
 }
 .footer .contentBox {
-  width: 65vw;
+  width: 50vw;
   margin-top: 6rem;
   color: var(--clr-white);
 }
@@ -785,6 +771,10 @@ section .gallery .row .imgContainer .imgDiv4 {
 .footer .contentBox .addressCol {
   display: flex;
   justify-content: flex-end;
+}
+.footer .contentBox .textBox p {
+  font-weight: 500;
+  font-family: "Lato";
 }
 .footer .iconBox {
   width: 5rem;
@@ -802,4 +792,39 @@ section .gallery .row .imgContainer .imgDiv4 {
 }
 .footer .contentBox .textBox p:nth-child(1) {
   text-transform: uppercase;
+  font-family: "Lato";
+  font-weight: 600;
+}
+/* rectangle */
+.footer .rectangleDiv {
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+}
+.footer .rectangleDiv .rectangleBot {
+  width: 100%;
+  height: 100%;
+  border: 15px solid var(--clr-primary-2);
+  background-color: transparent;
+  transform: rotate(45deg);
+  overflow: hidden;
+  position: absolute;
+  bottom: -18rem;
+  right: 0;
+}
+.footer .rectangleRow {
+  position: relative;
+}
+.footer h2 {
+  font-family: "Lato";
+  font-size: 1.25rem;
+  color: var(--clr-white);
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center !important;
+  position: absolute;
+  bottom: 0rem;
+}
+.footer span {
+  font-family: "Lato";
 }
