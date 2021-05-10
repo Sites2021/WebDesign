@@ -128,7 +128,16 @@
   .footer .contentBox {
     width: 80vw;
   }
+  .services .row .col-text h2 {
+    font-size: 3.2rem;
+  }
+  .services .row .col-text p {
+    width: 12rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
+
 @media only screen and (max-width: 1200px) {
   .container-large {
     padding-right: 0;

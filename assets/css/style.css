@@ -2,9 +2,10 @@
 @font-face {
   font-family: Lato;
   src: url(../fonts/Lato-Regular.ttf);
+  font-weight: 300;
 }
 @font-face {
-  font-family: Lato;
+  font-family: Lato-bold;
   src: url(../fonts/Lato-Bold.ttf);
   font-weight: bold;
 }
@@ -88,7 +89,7 @@ html {
   text-align: center;
   color: var(--clr-white);
   border-radius: 40px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 .btn:hover {
   color: var(--clr-white);
@@ -136,6 +137,7 @@ html {
   transform: scale(1.25);
   transition: ease-in-out 0.3s;
 }
+
 /* basic setup */
 /* Header */
 header {
@@ -273,9 +275,10 @@ header li {
 }
 .banner .mainTitle p {
   font-size: 1.5rem;
-  font-family: "Lato-light";
+  font-family: "Lato";
   text-align: center;
   margin-bottom: 5rem;
+  font-weight: 300;
 }
 /* title */
 .container-title {
@@ -351,6 +354,10 @@ header li {
 .social-icon li i {
   color: var(--clr-white);
 }
+.social-icon img {
+  width: 2.5rem;
+  color: #e18e23;
+}
 /* rectangle */
 .container-rectangle .row {
   width: 100vw;
@@ -386,19 +393,45 @@ section .creative .col-text {
 .h2-title {
   color: var(--clr-black-2);
   text-transform: uppercase;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 4rem;
   font-weight: 900;
   letter-spacing: 2px;
   line-height: 1;
   margin-bottom: 3rem;
 }
+.white-text {
+  color: var(--clr-white);
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+.white-p {
+  color: var(--clr-white);
+  font-family: "Lato";
+  font-size: 1.35rem;
+  letter-spacing: 0.01rem;
+  line-height: 1.8rem;
+  margin-bottom: 3rem;
+}
+.p-title {
+  color: var(--clr-black-1);
+  font-family: "Lato";
+  font-size: 1.35rem;
+  letter-spacing: 0.01rem;
+  line-height: 1.8rem;
+  margin-bottom: 3rem;
+}
+
 /* span in primary color */
 .span-Primary {
   color: var(--clr-primary-1);
   font-weight: 900;
 }
-
 .separator {
   border: 0.15rem solid var(--clr-primary-1);
   background-color: var(--clr-primary-1);
@@ -406,19 +439,21 @@ section .creative .col-text {
   height: 0.05rem;
   margin: 2rem 0;
 }
-.p-title {
-  color: var(--clr-black-1);
-  font-family: Lato-light;
-  font-size: 1.35rem;
+section .gallery .pCreative {
+  color: var(--clr-grey-3);
+  font-family: "Lato";
+  font-size: 1.1rem;
   letter-spacing: 0.01rem;
+  word-spacing: 0.25rem;
   line-height: 1.8rem;
   margin-bottom: 3rem;
+  font-weight: 400;
 }
 section .creative .images {
   width: 120rem;
   position: absolute;
   top: 8rem;
-  left: 55rem;
+  left: 35rem;
   transform: rotate(-45deg);
   display: flex;
   justify-content: center;
@@ -443,7 +478,7 @@ section .creative img {
 .container-rectangle2 {
   position: absolute;
   top: -37rem;
-  left: 65rem;
+  left: 46rem;
 }
 .container-rectangle2 .row {
   box-sizing: border-box;
@@ -571,14 +606,15 @@ section .gallery .row .imgContainer .imgDiv4 {
   color: var(--clr-primary-1);
 }
 .chooseUs .contentBox h3 {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   font-family: "Lato";
   color: var(--clr-white);
+  font-weight: 800;
 }
 .chooseUs .contentBox p {
   font-family: "Lato";
-  color: var(--clr-white-2);
+  color: var(--clr-grey-1);
 }
 /* Services section */
 .services {
@@ -608,6 +644,7 @@ section .gallery .row .imgContainer .imgDiv4 {
   height: fit-content;
   width: fit-content;
   background-size: cover;
+  padding-bottom: 1rem;
 }
 .services .row .contentBox {
   background: var(--clr-grey-4);
@@ -615,18 +652,21 @@ section .gallery .row .imgContainer .imgDiv4 {
   margin: 6.5rem 25rem 6rem 0;
   z-index: 3 !important;
   transform: translate(-9rem);
+  padding-bottom: 5.5rem;
 }
 .services .row .contentBox .contentItem {
   padding: 0 3rem;
 }
-.services .row .contentBox .fa {
-  font-size: 4.5rem;
+.services .row .contentBox .iconBox {
+  width: 8rem;
+  height: 8rem;
   border: 0.2rem solid var(--clr-white);
   border-radius: 50%;
-  padding: 1rem;
-  color: var(--clr-white);
-  margin: 1.75rem;
-  font-weight: 600;
+}
+.services .row .contentBox .iconBox img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 0rem;
 }
 .services .row .contentBox h3 {
   font-size: 1.35rem;
@@ -663,8 +703,14 @@ section .gallery .row .imgContainer .imgDiv4 {
   color: var(--clr-white-2);
 }
 .testimonials .iconBox {
-  font-size: 2.5rem;
-  margin: 0 1rem 0 -1rem;
+  /* font-size: 2.5rem; */
+  margin: -5px 0.5rem 0 0rem;
+  width: 3.75rem;
+  height: 2.6rem;
+}
+.testimonials .col3 .iconBox {
+  width: 7.75rem;
+  height: 5.6rem;
 }
 .testimonials .text-quote {
   width: 23rem;
@@ -695,6 +741,10 @@ section .gallery .row .imgContainer .imgDiv4 {
   margin-top: 5rem;
   font-size: 5rem;
   color: var(--clr-primary-1);
+}
+.testimonials .iconBox img {
+  width: 100%;
+  height: 100%;
 }
 .testimonials .col3 .p-title {
   margin-top: 3rem;
