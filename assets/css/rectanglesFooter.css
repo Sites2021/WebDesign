@@ -24,7 +24,17 @@
   .footer {
     height: fit-content;
   }
-  .footer .contentBox .iconBox {
-    padding-right: 6rem;
+  .footer .contentBox .telephoneCol {
+    display: flex;
+    justify-content: start;
+  }
+  .footer .mailCol img {
+    margin-right: 2rem !important;
+  }
+  .footer .contentBox .address {
+    margin-left: 1rem;
+  }
+  .footer .contentBox .addressCol img {
+    margin: 0 !important;
   }
 }
