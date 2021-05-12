@@ -329,8 +329,14 @@
     display: flex;
     align-items: center !important;
   }
-  .testimonials .slideshowContainer {
+  .testimonials .slides .imgBox {
     display: none !important;
+  }
+  .testimonials .col2 .iconBox {
+    margin-top: 3rem;
+  }
+  .testimonials .slides .dots {
+    margin-bottom: 4rem;
   }
 }
 @media (max-width: 790px) {
@@ -493,5 +499,8 @@
   }
   .social .iconBox {
     margin: 1.5rem 1.5rem;
+  }
+  .testimonials .iconBox {
+    height: 2rem;
   }
 }
