@@ -716,6 +716,13 @@ section .gallery .row .imgContainer .imgDiv4 {
 }
 .testimonials .text-quote {
   width: 23rem;
+  position: relative;
+}
+.testimonials .text-quote .prev1 {
+  left: 0;
+}
+.testimonials .text-quote .next1 {
+  right: 0;
 }
 .testimonials .text-quote p {
   color: var(--clr-grey-1);
