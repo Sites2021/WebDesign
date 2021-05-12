@@ -690,7 +690,7 @@ section .gallery .row .imgContainer .imgDiv4 {
 
 /* Testimonials section */
 .testimonials {
-  height: fit-content;
+  height: 90vh;
   width: 100vw;
   background-color: var(--clr-white);
   overflow: hidden;
@@ -729,35 +729,34 @@ section .gallery .row .imgContainer .imgDiv4 {
   text-transform: uppercase;
   margin: -1rem 0 6.5rem 0;
 }
-.testimonials .imgBox {
-  background: url(../images/client.png);
-  background-size: cover;
-}
 .testimonials .col-md-4 {
   flex: 1 0 auto !important;
 }
-.testimonials .col3 {
+.testimonials .col2 {
   background-color: var(--clr-white);
 }
-.testimonials .col3 .iconBox {
+.testimonials .col2 .iconBox {
   margin-top: 5rem;
   font-size: 5rem;
   color: var(--clr-primary-1);
+  width: 6.5rem;
+  height: 5rem;
 }
-.testimonials .iconBox img {
-  width: 100%;
-  height: 100%;
-}
-.testimonials .col3 .p-title {
+.testimonials .col2 .p-title {
   margin-top: 3rem;
   width: 15rem;
   font-size: 1.5rem;
   color: var(--clr-black);
   font-weight: 400 !important;
 }
-.testimonials .col3 .p-title span {
+.testimonials .col2 .p-title span {
   font-family: "Lato";
   font-weight: 700 !important;
+}
+
+.testimonials .iconBox img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Social section */

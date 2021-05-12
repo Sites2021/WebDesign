@@ -13,7 +13,7 @@ body {
 img {
   vertical-align: middle;
   background-size: cover;
-  height: fit-content;
+  /* height: fit-content; */
 }
 /* Slideshow container */
 .slideshow-container {
@@ -62,5 +62,62 @@ img {
   .next,
   .text {
     font-size: 11px;
+  }
+}
+
+/* ==== Slideshow Social Section ==== */
+
+.slides {
+  display: none;
+  width: 100%;
+}
+
+.slides .imgBox img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.point {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fc9e20;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.point:hover {
+  background-color: #e18e23;
+}
+
+/* Fading animation */
+.fade1 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.6;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.6;
+  }
+
+  to {
+    opacity: 1;
   }
 }
